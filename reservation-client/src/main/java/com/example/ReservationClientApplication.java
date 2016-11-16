@@ -10,12 +10,6 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-/*interface ReservationClientChannels {
-
-	@Output
-	MessageChannel output();
-}*/
-
 @EnableBinding(ReservationClientChannels.class)
 @EnableCircuitBreaker
 @EnableZuulProxy
